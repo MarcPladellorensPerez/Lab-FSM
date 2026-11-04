@@ -26,8 +26,8 @@ MonoBehaviour:
   m_Name: ThiefGraph Blackboard
   m_EditorClassIdentifier: Unity.Behavior.Authoring::Unity.Behavior.BehaviorBlackboardAuthoringAsset
   AssetID:
-    m_Value0: 0
-    m_Value1: 0
+    m_Value0: 6113493378150842260
+    m_Value1: 3413434491901525128
   m_Variables:
   - rid: 5879401037486096387
   m_VersionTimestamp: 639293987441843344
@@ -68,39 +68,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 5879401037486096388
-      type: {class: BehaviorGraphModule, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        AuthoringAssetID:
-          m_Value0: 6113493378150842260
-          m_Value1: 3413434491901525128
-        m_DebugInfo: {fileID: -9132290054180772293}
-        BlackboardReference:
-          rid: 5879401037486096389
-        BlackboardGroupReferences: []
-        Root:
-          rid: 5879401037486096473
-        m_VersionTimestamp: 639293990905161978
-    - rid: 5879401037486096389
-      type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        m_Blackboard:
-          rid: 5879401037486096391
-        m_Source: {fileID: 2471578757343508653}
-    - rid: 5879401037486096391
-      type: {class: Blackboard, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        m_Variables:
-        - rid: 5879401037486096392
-    - rid: 5879401037486096392
-      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 1
-          m_Value1: 0
-        Name: Self
-        m_Value: {fileID: 0}
-    - rid: 5879401037486096473
+    - rid: 3524364786205196288
       type: {class: Start, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -114,6 +82,38 @@ MonoBehaviour:
           rid: -2
         Repeat: 1
         AllowMultipleRepeatsPerTick: 0
+    - rid: 3524364786205196289
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 0}
+    - rid: 5879401037486096388
+      type: {class: BehaviorGraphModule, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        AuthoringAssetID:
+          m_Value0: 6113493378150842260
+          m_Value1: 3413434491901525128
+        m_DebugInfo: {fileID: -9132290054180772293}
+        BlackboardReference:
+          rid: 5879401037486096389
+        BlackboardGroupReferences: []
+        Root:
+          rid: 3524364786205196288
+        m_VersionTimestamp: 639294253387596045
+    - rid: 5879401037486096389
+      type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Blackboard:
+          rid: 5879401037486096391
+        m_Source: {fileID: 2471578757343508653}
+    - rid: 5879401037486096391
+      type: {class: Blackboard, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Variables:
+        - rid: 3524364786205196289
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Nodes:
   - rid: 5879401037486096393
   - rid: 5879401037486096462
-  m_VersionTimestamp: 639293990905161978
+  m_VersionTimestamp: 639294253387596045
   m_SerializedVersion: 3
   m_DebugInfo: {fileID: -9132290054180772293}
   m_RuntimeGraph: {fileID: -4547947171700931692}
@@ -153,13 +153,13 @@ MonoBehaviour:
     Variables: []
     NamedChildren: []
     IsPlaceholder: 0
-  - Name: OpenDoor
-    Story: 'Open [DoorBlocker] with [HasKey] or [HasTool] and set [DoorOpen]'
+  - Name: OpenDoorAction
+    Story: 'Open [DoorBlocker] using [HasKey] or [HasTool] and set [DoorOpen]'
     RuntimeTypeString: OpenDoorAction, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     RuntimeTypeID:
-      m_Value0: 521449937625222265
-      m_Value1: 2478167447216391095
+      m_Value0: 8715553535464806418
+      m_Value1: 2685714211065404236
     Variables:
     - Name: DoorBlocker
       Type:
@@ -241,8 +241,8 @@ MonoBehaviour:
           m_SerializableType: OpenDoorAction, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
             PublicKeyToken=null
         NodeTypeID:
-          m_Value0: 521449937625222265
-          m_Value1: 2478167447216391095
+          m_Value0: 8715553535464806418
+          m_Value1: 2685714211065404236
         m_FieldValues:
         - rid: 5879401037486096465
         - rid: 5879401037486096466
