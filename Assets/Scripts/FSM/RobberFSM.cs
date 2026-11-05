@@ -19,14 +19,16 @@ public class RobberFSM : MonoBehaviour
     public State currentState = State.Wander;
 
     [Header("Configuración de Wander y Refugios")]
-    public float wanderRadius = 8f;
+    public float wanderRadius = 6f;
     public float wanderChangeInterval = 3f;
     public float arrivalThreshold = 0.6f;
-    public float retryCooldown = 2.0f; // Espera de 2 segundos tras interrupción o fallo
+    public float retryCooldown = 2.0f;
     public List<Transform> refugePoints = new List<Transform>();
 
     private NavMeshAgent navAgent;
     private BehaviorGraphAgent behaviorAgent;
+    private Animator animator;
+    private Vector3 wanderOrigin;
 
     private float wanderTimer;
     private float cooldownTimer;
@@ -35,11 +37,12 @@ public class RobberFSM : MonoBehaviour
     {
         navAgent = GetComponent<NavMeshAgent>();
         behaviorAgent = GetComponent<BehaviorGraphAgent>();
+        animator = GetComponentInChildren<Animator>();
+        wanderOrigin = transform.position;
     }
 
     void Start()
     {
-        // Aseguramos que el BehaviorGraphAgent no arranque solo hasta entrar en Robbery
         behaviorAgent.End();
         EnterState(State.Wander);
     }
@@ -66,6 +69,26 @@ public class RobberFSM : MonoBehaviour
                 UpdateHidden();
                 break;
         }
+
+        UpdateAnimatorSpeed();
+    }
+
+    private void UpdateAnimatorSpeed()
+    {
+        if (animator == null) return;
+        float speed = navAgent.velocity.magnitude;
+        foreach (AnimatorControllerParameter param in animator.parameters)
+        {
+            if (param.type == AnimatorControllerParameterType.Float)
+            {
+                animator.SetFloat(param.name, speed);
+            }
+            else if (param.type == AnimatorControllerParameterType.Bool && 
+                    (param.name.ToLower().Contains("walk") || param.name.ToLower().Contains("move") || param.name.ToLower().Contains("run")))
+            {
+                animator.SetBool(param.name, speed > 0.1f);
+            }
+        }
     }
 
     private void EnterState(State newState)
@@ -84,7 +107,7 @@ public class RobberFSM : MonoBehaviour
                 navAgent.speed = GetBlackboardFloat("RobberySpeed", 4.5f);
                 navAgent.isStopped = false;
                 SyncResourceAvailability();
-                behaviorAgent.Restart(); // Inicia el grafo de Robbery
+                behaviorAgent.Restart();
                 break;
 
             case State.Hiding:
@@ -106,20 +129,16 @@ public class RobberFSM : MonoBehaviour
         }
     }
 
-    // --- LÓGICA DE ESTADOS ---
-
     private void UpdateWander()
     {
-        // Deambular lentamente por el escenario
         wanderTimer -= Time.deltaTime;
         if (wanderTimer <= 0f || (!navAgent.pathPending && navAgent.remainingDistance <= arrivalThreshold))
         {
-            Vector3 randomDest = GetRandomNavMeshPoint(transform.position, wanderRadius);
+            Vector3 randomDest = GetRandomNavMeshPoint(wanderOrigin, wanderRadius);
             navAgent.SetDestination(randomDest);
             wanderTimer = wanderChangeInterval;
         }
 
-        // Transición Wander -> Robbery: Policia lejos y tiempo de espera (2s) cumplido
         if (cooldownTimer <= 0f && IsCopFar())
         {
             EnterState(State.Robbery);
@@ -128,7 +147,6 @@ public class RobberFSM : MonoBehaviour
 
     private void UpdateRobbery()
     {
-        // 1. Transición Robbery -> Hiding: Tesoro recogido
         if (GetBlackboardBool("HasTreasure"))
         {
             behaviorAgent.End();
@@ -136,14 +154,12 @@ public class RobberFSM : MonoBehaviour
             return;
         }
 
-        // 2. Transición Robbery -> Wander: El policía vuelve antes de completar el robo
         if (!IsCopFar())
         {
             InterruptRobbery();
             return;
         }
 
-        // 3. Transición Robbery -> Wander: El plan en el grafo ha fallado (ej. sin recursos)
         if (behaviorAgent.Graph != null && !behaviorAgent.Graph.IsRunning)
         {
             InterruptRobbery();
@@ -152,35 +168,24 @@ public class RobberFSM : MonoBehaviour
 
     private void UpdateHiding()
     {
-        // Transición Hiding -> Hidden: Llega al refugio más cercano
         if (!navAgent.pathPending && navAgent.remainingDistance <= arrivalThreshold)
         {
             EnterState(State.Hidden);
         }
     }
 
-    private void UpdateHidden()
-    {
-        // Se queda detenido en el refugio
-    }
-
-    // --- GESTIÓN DE INTERRUPCIONES Y BLACKBOARD ---
+    private void UpdateHidden() { }
 
     private void InterruptRobbery()
     {
-        // Detenemos el grafo y cancelamos el desplazamiento actual
-        // No reseteamos HasKey, HasTool ni DoorOpen para conservar el inventario y estado de la puerta
         behaviorAgent.End();
         navAgent.ResetPath();
-
-        cooldownTimer = retryCooldown; // Esperar 2 segundos antes de volver a intentarlo
+        cooldownTimer = retryCooldown;
         EnterState(State.Wander);
     }
 
     private void SyncResourceAvailability()
     {
-        // En el siguiente intento comprueba de nuevo las condiciones:
-        // Una vía está disponible si ya tenemos el objeto en inventario o si sigue activo en la escena
         GameObject keyObj = GetBlackboardGameObject("KeyObject");
         bool hasKey = GetBlackboardBool("HasKey");
         bool keyAvailable = hasKey || (keyObj != null && keyObj.activeInHierarchy);
@@ -232,8 +237,6 @@ public class RobberFSM : MonoBehaviour
         }
         return origin;
     }
-
-    // --- HELPERS DEL BLACKBOARD ---
 
     private bool GetBlackboardBool(string varName)
     {
