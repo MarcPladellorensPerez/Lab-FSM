@@ -1204,11 +1204,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1909452189286827990, guid: 1c68b40cea97f51468b75b51a90927e1, type: 3}
       propertyPath: m_Speed
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1909452189286827990, guid: 1c68b40cea97f51468b75b51a90927e1, type: 3}
       propertyPath: m_Acceleration
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1909452189286827990, guid: 1c68b40cea97f51468b75b51a90927e1, type: 3}
       propertyPath: m_AngularSpeed
@@ -15338,7 +15338,7 @@ MonoBehaviour:
           m_Value0: 11285078634721878233
           m_Value1: 8738905675015917341
         Name: WanderSpeed
-        m_Value: 30
+        m_Value: 8
     - rid: 3524364786205196548
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -15346,7 +15346,7 @@ MonoBehaviour:
           m_Value0: 9017180568201834729
           m_Value1: 11365162017493367762
         Name: RobberySpeed
-        m_Value: 50
+        m_Value: 15
 --- !u!1001 &1138440213
 PrefabInstance:
   m_ObjectHideFlags: 0
