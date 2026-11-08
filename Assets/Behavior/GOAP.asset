@@ -1,0 +1,1399 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1924258434882057755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c02bb70996b49eba31d0c206e28da24, type: 3}
+  m_Name: GOAP Blackboard
+  m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.RuntimeBlackboardAsset
+  VersionTimestamp: 639295153558916560
+  AssetID:
+    m_Value0: 2634621272963728154
+    m_Value1: 10607696690854656505
+  m_Blackboard:
+    m_Variables:
+    - rid: 6298439217863458883
+    - rid: 6298439217863458895
+    - rid: 6298439217863458903
+    - rid: 6298439217863458913
+    - rid: 6298439217863458943
+    - rid: 6298439217863458967
+    - rid: 6298439217863458985
+    - rid: 6298439217863459005
+    - rid: 6298439217863459027
+    - rid: 6298439217863459051
+    - rid: 6298439217863459077
+    - rid: 6298439217863459105
+    - rid: 6298439217863459135
+    - rid: 6298439217863459167
+    - rid: 6298439217863459201
+    - rid: 6298439217863459237
+    - rid: 6298439217863459353
+    - rid: 6298439242097623529
+  m_SharedBlackboardVariableGuids: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 6298439217863458883
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Robber
+        m_Value: {fileID: 0}
+    - rid: 6298439217863458895
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1395547218090777343
+          m_Value1: 17411242704284998221
+        Name: Cop
+        m_Value: {fileID: 0}
+    - rid: 6298439217863458903
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 15330647795203116503
+          m_Value1: 1831599716212418991
+        Name: Treasure
+        m_Value: {fileID: 0}
+    - rid: 6298439217863458913
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 14471023060089862333
+          m_Value1: 16739159935343422658
+        Name: DoorBlocker
+        m_Value: {fileID: 0}
+    - rid: 6298439217863458943
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 307376063500770148
+          m_Value1: 5736938523131273789
+        Name: DoorPoint
+        m_Value: {fileID: 0}
+    - rid: 6298439217863458967
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 14235872466892314788
+          m_Value1: 17210934297392567016
+        Name: KeyObject
+        m_Value: {fileID: 0}
+    - rid: 6298439217863458985
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 3013726340177731993
+          m_Value1: 15335986148437212347
+        Name: ToolObject
+        m_Value: {fileID: 0}
+    - rid: 6298439217863459005
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 5380965352810977515
+          m_Value1: 10444040911625545672
+        Name: CurrentRefuge
+        m_Value: {fileID: 0}
+    - rid: 6298439217863459027
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 2243163872202181881
+          m_Value1: 16712656362204349602
+        Name: DoorOpen
+        m_Value: 0
+    - rid: 6298439217863459051
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 15032524311858710862
+          m_Value1: 17295121907222287616
+        Name: KeyAvailable
+        m_Value: 0
+    - rid: 6298439217863459077
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 14807629525419512158
+          m_Value1: 4271024804582045911
+        Name: ToolAvailable
+        m_Value: 0
+    - rid: 6298439217863459105
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 11577393295597536144
+          m_Value1: 3237491621452392734
+        Name: HasKey
+        m_Value: 0
+    - rid: 6298439217863459135
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 6117866408900573697
+          m_Value1: 16419835868372151520
+        Name: HasTool
+        m_Value: 0
+    - rid: 6298439217863459167
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1613347220060142035
+          m_Value1: 14603563212097691388
+        Name: HasTreasure
+        m_Value: 0
+    - rid: 6298439217863459201
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1838551500992946984
+          m_Value1: 3650515241665120739
+        Name: CopSafeDistance
+        m_Value: 0
+    - rid: 6298439217863459237
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 11285078634721878233
+          m_Value1: 8738905675015917341
+        Name: WanderSpeed
+        m_Value: 0
+    - rid: 6298439217863459353
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 9017180568201834729
+          m_Value1: 11365162017493367762
+        Name: RobberySpeed
+        m_Value: 0
+    - rid: 6298439242097623529
+      type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 13628708616175823926
+          m_Value1: 13769116853024577707
+        Name: CurrentPlan
+        m_Value: 
+--- !u!114 &-759651605669784968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db920e62f70f420bb33c771449926fa4, type: 3}
+  m_Name: GOAP
+  m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraph
+  Graphs:
+  - rid: 6298439217863458884
+  m_DebugInfo: {fileID: 9042515844539593367}
+  m_WasCompileWithPlaceholderNode: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 6298439217863458884
+      type: {class: BehaviorGraphModule, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        AuthoringAssetID:
+          m_Value0: 2634621272963728154
+          m_Value1: 10607696690854656505
+        m_DebugInfo: {fileID: 9042515844539593367}
+        BlackboardReference:
+          rid: 6298439217863458885
+        BlackboardGroupReferences: []
+        Root:
+          rid: 6298439242097623709
+        m_VersionTimestamp: 639295154030777940
+    - rid: 6298439217863458885
+      type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Blackboard:
+          rid: 6298439217863458887
+        m_Source: {fileID: -1924258434882057755}
+    - rid: 6298439217863458887
+      type: {class: Blackboard, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Variables:
+        - rid: 6298439242097623691
+        - rid: 6298439242097623692
+        - rid: 6298439242097623693
+        - rid: 6298439242097623694
+        - rid: 6298439242097623695
+        - rid: 6298439242097623696
+        - rid: 6298439242097623697
+        - rid: 6298439242097623698
+        - rid: 6298439242097623699
+        - rid: 6298439242097623700
+        - rid: 6298439242097623701
+        - rid: 6298439242097623702
+        - rid: 6298439242097623703
+        - rid: 6298439242097623704
+        - rid: 6298439242097623705
+        - rid: 6298439242097623706
+        - rid: 6298439242097623707
+        - rid: 6298439242097623708
+    - rid: 6298439242097623638
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 0.8
+    - rid: 6298439242097623639
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 1
+    - rid: 6298439242097623640
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 1
+    - rid: 6298439242097623641
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 3
+    - rid: 6298439242097623642
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 1
+    - rid: 6298439242097623691
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Robber
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623692
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1395547218090777343
+          m_Value1: 17411242704284998221
+        Name: Cop
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623693
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 15330647795203116503
+          m_Value1: 1831599716212418991
+        Name: Treasure
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623694
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 14471023060089862333
+          m_Value1: 16739159935343422658
+        Name: DoorBlocker
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623695
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 307376063500770148
+          m_Value1: 5736938523131273789
+        Name: DoorPoint
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623696
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 14235872466892314788
+          m_Value1: 17210934297392567016
+        Name: KeyObject
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623697
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 3013726340177731993
+          m_Value1: 15335986148437212347
+        Name: ToolObject
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623698
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 5380965352810977515
+          m_Value1: 10444040911625545672
+        Name: CurrentRefuge
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623699
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 2243163872202181881
+          m_Value1: 16712656362204349602
+        Name: DoorOpen
+        m_Value: 0
+    - rid: 6298439242097623700
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 15032524311858710862
+          m_Value1: 17295121907222287616
+        Name: KeyAvailable
+        m_Value: 0
+    - rid: 6298439242097623701
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 14807629525419512158
+          m_Value1: 4271024804582045911
+        Name: ToolAvailable
+        m_Value: 0
+    - rid: 6298439242097623702
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 11577393295597536144
+          m_Value1: 3237491621452392734
+        Name: HasKey
+        m_Value: 0
+    - rid: 6298439242097623703
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 6117866408900573697
+          m_Value1: 16419835868372151520
+        Name: HasTool
+        m_Value: 0
+    - rid: 6298439242097623704
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1613347220060142035
+          m_Value1: 14603563212097691388
+        Name: HasTreasure
+        m_Value: 0
+    - rid: 6298439242097623705
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1838551500992946984
+          m_Value1: 3650515241665120739
+        Name: CopSafeDistance
+        m_Value: 0
+    - rid: 6298439242097623706
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 11285078634721878233
+          m_Value1: 8738905675015917341
+        Name: WanderSpeed
+        m_Value: 0
+    - rid: 6298439242097623707
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 9017180568201834729
+          m_Value1: 11365162017493367762
+        Name: RobberySpeed
+        m_Value: 0
+    - rid: 6298439242097623708
+      type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 13628708616175823926
+          m_Value1: 13769116853024577707
+        Name: CurrentPlan
+        m_Value: 
+    - rid: 6298439242097623709
+      type: {class: Start, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 11187274428443326474
+          m_Value1: 16587810201877963907
+        Graph:
+          rid: 6298439217863458884
+        m_Parent:
+          rid: -2
+        m_Child:
+          rid: 6298439242097623710
+        Repeat: 0
+        AllowMultipleRepeatsPerTick: 0
+    - rid: 6298439242097623710
+      type: {class: GoapRobberyAction, ns: , asm: Assembly-CSharp}
+      data:
+        ID:
+          m_Value0: 8626883010514610667
+          m_Value1: 10204532184829081286
+        Graph:
+          rid: 6298439217863458884
+        m_Parent:
+          rid: 6298439242097623709
+        Agent:
+          rid: 6298439242097623691
+        HasTreasure:
+          rid: 6298439242097623704
+        KeyObject:
+          rid: 6298439242097623696
+        ToolObject:
+          rid: 6298439242097623697
+        DoorPoint:
+          rid: 6298439242097623695
+        DoorBlocker:
+          rid: 6298439242097623694
+        Treasure:
+          rid: 6298439242097623693
+        HasKey:
+          rid: 6298439242097623702
+        HasTool:
+          rid: 6298439242097623703
+        DoorOpen:
+          rid: 6298439242097623699
+        Speed:
+          rid: 6298439242097623707
+        ArrivalDistance:
+          rid: 6298439242097623638
+        PickCost:
+          rid: 6298439242097623639
+        OpenWithKeyCost:
+          rid: 6298439242097623640
+        ForceWithToolCost:
+          rid: 6298439242097623641
+        TakeTreasureCost:
+          rid: 6298439242097623642
+        CurrentPlan:
+          rid: 6298439242097623708
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad8f2220607dac4db5082ff333fafb8, type: 3}
+  m_Name: GOAP
+  m_EditorClassIdentifier: Unity.Behavior.Authoring::Unity.Behavior.BehaviorAuthoringGraph
+  Blackboard: {fileID: 8649823147937636554}
+  m_Description: 
+  m_Nodes:
+  - rid: 6298439217863458889
+  - rid: 6298439242097623587
+  m_VersionTimestamp: 639295154030777940
+  m_SerializedVersion: 3
+  m_DebugInfo: {fileID: 9042515844539593367}
+  m_RuntimeGraph: {fileID: -759651605669784968}
+  AssetID:
+    m_Value0: 2634621272963728154
+    m_Value1: 10607696690854656505
+  Story:
+    Story: 
+    StoryVariableNames: []
+    Variables: []
+  m_NodeModelsInfo:
+  - Name: On Start
+    Story: 
+    RuntimeTypeString: Unity.Behavior.Start, Unity.Behavior, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    RuntimeTypeID:
+      m_Value0: 3335272451348827663
+      m_Value1: 11549843281177505721
+    Variables: []
+    NamedChildren: []
+    IsPlaceholder: 0
+  - Name: GOAP Robbery
+    Story: '[Agent] plans and executes a GOAP plan to get [HasTreasure]'
+    RuntimeTypeString: GoapRobberyAction, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    RuntimeTypeID:
+      m_Value0: 16593262801148808795
+      m_Value1: 15686570518997291187
+    Variables:
+    - Name: Agent
+      Type:
+        m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: HasTreasure
+      Type:
+        m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    - Name: KeyObject
+      Type:
+        m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: ToolObject
+      Type:
+        m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: DoorPoint
+      Type:
+        m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: DoorBlocker
+      Type:
+        m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: Treasure
+      Type:
+        m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: HasKey
+      Type:
+        m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    - Name: HasTool
+      Type:
+        m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    - Name: DoorOpen
+      Type:
+        m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    - Name: Speed
+      Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    - Name: ArrivalDistance
+      Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    - Name: PickCost
+      Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    - Name: OpenWithKeyCost
+      Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    - Name: ForceWithToolCost
+      Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    - Name: TakeTreasureCost
+      Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    - Name: CurrentPlan
+      Type:
+        m_SerializableType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    NamedChildren: []
+    IsPlaceholder: 0
+  m_Blackboards: []
+  m_MainBlackboardAuthoringAsset: {fileID: 8649823147937636554}
+  m_CommandBuffer:
+    m_Commands: []
+  m_SubgraphsInfo: []
+  m_BlackboardMissingManagedRef: 0
+  m_GraphMissingManagedRef: 0
+  m_HasMissingTypeInManagedRef: 0
+  m_EnumDependencyCache:
+    Entries: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 6298439217863458889
+      type: {class: StartNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 0, y: 0}
+        ID:
+          m_Value0: 11187274428443326474
+          m_Value1: 16587810201877963907
+        Parents: []
+        PortModels:
+        - rid: 6298439217863458890
+        NodeType:
+          m_SerializableType: Unity.Behavior.Start, Unity.Behavior, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 3335272451348827663
+          m_Value1: 11549843281177505721
+        m_FieldValues: []
+        Repeat: 0
+        AllowMultipleRepeatsPerTick: 0
+    - rid: 6298439217863458890
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 6298439217863458889
+        m_Connections:
+        - rid: 6298439242097623588
+    - rid: 6298439242097623587
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 0, y: 103}
+        ID:
+          m_Value0: 8626883010514610667
+          m_Value1: 10204532184829081286
+        Parents: []
+        PortModels:
+        - rid: 6298439242097623588
+        - rid: 6298439242097623589
+        NodeType:
+          m_SerializableType: GoapRobberyAction, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 16593262801148808795
+          m_Value1: 15686570518997291187
+        m_FieldValues:
+        - rid: 6298439242097623590
+        - rid: 6298439242097623591
+        - rid: 6298439242097623592
+        - rid: 6298439242097623593
+        - rid: 6298439242097623594
+        - rid: 6298439242097623595
+        - rid: 6298439242097623596
+        - rid: 6298439242097623597
+        - rid: 6298439242097623598
+        - rid: 6298439242097623599
+        - rid: 6298439242097623600
+        - rid: 6298439242097623601
+        - rid: 6298439242097623602
+        - rid: 6298439242097623603
+        - rid: 6298439242097623604
+        - rid: 6298439242097623605
+        - rid: 6298439242097623606
+    - rid: 6298439242097623588
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 6298439242097623587
+        m_Connections:
+        - rid: 6298439217863458890
+    - rid: 6298439242097623589
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 6298439242097623587
+        m_Connections: []
+    - rid: 6298439242097623590
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Agent
+        Type:
+          m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 6298439242097623607
+        LinkedVariable:
+          rid: 6298439242097623646
+    - rid: 6298439242097623591
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: HasTreasure
+        Type:
+          m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 6298439242097623608
+        LinkedVariable:
+          rid: 6298439242097623609
+    - rid: 6298439242097623592
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: KeyObject
+        Type:
+          m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 6298439242097623610
+        LinkedVariable:
+          rid: 6298439242097623611
+    - rid: 6298439242097623593
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: ToolObject
+        Type:
+          m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 6298439242097623612
+        LinkedVariable:
+          rid: 6298439242097623613
+    - rid: 6298439242097623594
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: DoorPoint
+        Type:
+          m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 6298439242097623614
+        LinkedVariable:
+          rid: 6298439242097623615
+    - rid: 6298439242097623595
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: DoorBlocker
+        Type:
+          m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 6298439242097623616
+        LinkedVariable:
+          rid: 6298439242097623617
+    - rid: 6298439242097623596
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Treasure
+        Type:
+          m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 6298439242097623618
+        LinkedVariable:
+          rid: 6298439242097623619
+    - rid: 6298439242097623597
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: HasKey
+        Type:
+          m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 6298439242097623620
+        LinkedVariable:
+          rid: 6298439242097623621
+    - rid: 6298439242097623598
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: HasTool
+        Type:
+          m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 6298439242097623622
+        LinkedVariable:
+          rid: 6298439242097623623
+    - rid: 6298439242097623599
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: DoorOpen
+        Type:
+          m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 6298439242097623624
+        LinkedVariable:
+          rid: 6298439242097623625
+    - rid: 6298439242097623600
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Speed
+        Type:
+          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 6298439242097623626
+        LinkedVariable:
+          rid: 6298439242097623667
+    - rid: 6298439242097623601
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: ArrivalDistance
+        Type:
+          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 6298439242097623627
+        LinkedVariable:
+          rid: -2
+    - rid: 6298439242097623602
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: PickCost
+        Type:
+          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 6298439242097623628
+        LinkedVariable:
+          rid: -2
+    - rid: 6298439242097623603
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: OpenWithKeyCost
+        Type:
+          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 6298439242097623629
+        LinkedVariable:
+          rid: -2
+    - rid: 6298439242097623604
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: ForceWithToolCost
+        Type:
+          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 6298439242097623630
+        LinkedVariable:
+          rid: -2
+    - rid: 6298439242097623605
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: TakeTreasureCost
+        Type:
+          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 6298439242097623631
+        LinkedVariable:
+          rid: -2
+    - rid: 6298439242097623606
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: CurrentPlan
+        Type:
+          m_SerializableType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 6298439242097623632
+        LinkedVariable:
+          rid: 6298439242097623688
+    - rid: 6298439242097623607
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623608
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 0
+    - rid: 6298439242097623609
+      type: {class: 'TypedVariableModel`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 1613347220060142035
+          m_Value1: 14603563212097691388
+        Name: HasTreasure
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 6298439242097623610
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623611
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 14235872466892314788
+          m_Value1: 17210934297392567016
+        Name: KeyObject
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623612
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623613
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 3013726340177731993
+          m_Value1: 15335986148437212347
+        Name: ToolObject
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623614
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623615
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 307376063500770148
+          m_Value1: 5736938523131273789
+        Name: DoorPoint
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623616
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623617
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 14471023060089862333
+          m_Value1: 16739159935343422658
+        Name: DoorBlocker
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623618
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623619
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 15330647795203116503
+          m_Value1: 1831599716212418991
+        Name: Treasure
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623620
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 0
+    - rid: 6298439242097623621
+      type: {class: 'TypedVariableModel`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 11577393295597536144
+          m_Value1: 3237491621452392734
+        Name: HasKey
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 6298439242097623622
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 0
+    - rid: 6298439242097623623
+      type: {class: 'TypedVariableModel`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 6117866408900573697
+          m_Value1: 16419835868372151520
+        Name: HasTool
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 6298439242097623624
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 0
+    - rid: 6298439242097623625
+      type: {class: 'TypedVariableModel`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 2243163872202181881
+          m_Value1: 16712656362204349602
+        Name: DoorOpen
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 6298439242097623626
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 4.5
+    - rid: 6298439242097623627
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 0.8
+    - rid: 6298439242097623628
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 1
+    - rid: 6298439242097623629
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 1
+    - rid: 6298439242097623630
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 3
+    - rid: 6298439242097623631
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 1
+    - rid: 6298439242097623632
+      type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 
+    - rid: 6298439242097623646
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Robber
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 6298439242097623667
+      type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 9017180568201834729
+          m_Value1: 11365162017493367762
+        Name: RobberySpeed
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 6298439242097623688
+      type: {class: 'TypedVariableModel`1[[System.String, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 13628708616175823926
+          m_Value1: 13769116853024577707
+        Name: CurrentPlan
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 
+--- !u!114 &8649823147937636554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd922ae02c94c87a66e46a10a7319b9, type: 3}
+  m_Name: GOAP Blackboard
+  m_EditorClassIdentifier: Unity.Behavior.Authoring::Unity.Behavior.BehaviorBlackboardAuthoringAsset
+  AssetID:
+    m_Value0: 2634621272963728154
+    m_Value1: 10607696690854656505
+  m_Variables:
+  - rid: 6298439217863458891
+  - rid: 6298439217863458894
+  - rid: 6298439217863458902
+  - rid: 6298439217863458912
+  - rid: 6298439217863458924
+  - rid: 6298439217863458966
+  - rid: 6298439217863458984
+  - rid: 6298439217863459004
+  - rid: 6298439217863459026
+  - rid: 6298439217863459050
+  - rid: 6298439217863459076
+  - rid: 6298439217863459104
+  - rid: 6298439217863459134
+  - rid: 6298439217863459166
+  - rid: 6298439217863459200
+  - rid: 6298439217863459236
+  - rid: 6298439217863459352
+  - rid: 6298439242097623528
+  m_VersionTimestamp: 639295153558916560
+  m_CommandBuffer:
+    m_Commands: []
+  m_RuntimeBlackboardAsset: {fileID: -1924258434882057755}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6298439217863458891
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Robber
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 6298439217863458894
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 1395547218090777343
+          m_Value1: 17411242704284998221
+        Name: Cop
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 6298439217863458902
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 15330647795203116503
+          m_Value1: 1831599716212418991
+        Name: Treasure
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 6298439217863458912
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 14471023060089862333
+          m_Value1: 16739159935343422658
+        Name: DoorBlocker
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 6298439217863458924
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 307376063500770148
+          m_Value1: 5736938523131273789
+        Name: DoorPoint
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 6298439217863458966
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 14235872466892314788
+          m_Value1: 17210934297392567016
+        Name: KeyObject
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 6298439217863458984
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 3013726340177731993
+          m_Value1: 15335986148437212347
+        Name: ToolObject
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 6298439217863459004
+      type: {class: 'TypedVariableModel`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 5380965352810977515
+          m_Value1: 10444040911625545672
+        Name: CurrentRefuge
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 6298439217863459026
+      type: {class: 'TypedVariableModel`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 2243163872202181881
+          m_Value1: 16712656362204349602
+        Name: DoorOpen
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 6298439217863459050
+      type: {class: 'TypedVariableModel`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 15032524311858710862
+          m_Value1: 17295121907222287616
+        Name: KeyAvailable
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 6298439217863459076
+      type: {class: 'TypedVariableModel`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 14807629525419512158
+          m_Value1: 4271024804582045911
+        Name: ToolAvailable
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 6298439217863459104
+      type: {class: 'TypedVariableModel`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 11577393295597536144
+          m_Value1: 3237491621452392734
+        Name: HasKey
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 6298439217863459134
+      type: {class: 'TypedVariableModel`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 6117866408900573697
+          m_Value1: 16419835868372151520
+        Name: HasTool
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 6298439217863459166
+      type: {class: 'TypedVariableModel`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 1613347220060142035
+          m_Value1: 14603563212097691388
+        Name: HasTreasure
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 6298439217863459200
+      type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 1838551500992946984
+          m_Value1: 3650515241665120739
+        Name: CopSafeDistance
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 6298439217863459236
+      type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 11285078634721878233
+          m_Value1: 8738905675015917341
+        Name: WanderSpeed
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 6298439217863459352
+      type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 9017180568201834729
+          m_Value1: 11365162017493367762
+        Name: RobberySpeed
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 6298439242097623528
+      type: {class: 'TypedVariableModel`1[[System.String, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 13628708616175823926
+          m_Value1: 13769116853024577707
+        Name: CurrentPlan
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 
+--- !u!114 &9042515844539593367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b27bb6d9a2c8d540a10dff10acc543e, type: 3}
+  m_Name: GOAP Debug Info
+  m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraphDebugInfo
+  m_CodeBreakPointsList: []
